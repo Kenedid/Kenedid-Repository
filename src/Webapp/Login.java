@@ -24,7 +24,7 @@ public class Login extends HttpServlet {
         request.setAttribute("name" , request.getParameter("loginname"));
         request.setAttribute("password", request.getParameter("password"));
 
-        Validateinformation validateinformation = new Validateinformation();
+
 
         if(validateinformation.validateInfo(request.getParameter("loginname"),request.getParameter("password"))){
             request.getRequestDispatcher("/Welcome.jsp").forward(request,response);
