@@ -1,5 +1,7 @@
 package Webapp.NormalJavaClass;
 
+import DatabasePackage.Databaseclass;
+
 /**
  * Created by Kenedid on 14-04-2017.
  */
@@ -7,11 +9,12 @@ public class Validateinformation {
 
     public boolean validateInfo(String name,String password){
 
-        if(name.equals("Kenedid") && password.equals("1234")){
+        Databaseclass databaseclass = new Databaseclass();
 
-            return true;
+        return databaseclass.IsinformationValidate(name,password);
         }
-        return false;
+
+
     }
 
-}
+
