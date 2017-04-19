@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1>Login as a user</h1>
+    <h1>Login as a user test</h1>
 
    <form action="/Login" method="post">
        login-name: <input type="text" name=loginname width="30"/>
